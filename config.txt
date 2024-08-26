@@ -1,0 +1,17 @@
+server.port={{ port }}
+
+virtualan.datasource.driver-class-name={{ driver_name }}
+
+virtualan.datasource.jdbcurl= {{ jdbcurl }}
+
+virtualan.datasource.username={{ username }}
+
+virtualan.datasource.password={{ password }}
+
+virtualan.application.name={{ appname }}
+
+virtualan.data.load={{ initialFileLoad }}
+
+virtualan.script.enabled={{ isScriptEnabled }}
+
+spring.main.allow-circular-references=true
