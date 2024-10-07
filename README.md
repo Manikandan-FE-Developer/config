@@ -1,3 +1,6 @@
+Your README file looks comprehensive and well-structured! Here’s a slight improvement for clarity and completeness, specifically emphasizing the React Toastify installation:
+
+```markdown
 # Configuration Management
 
 ## Overview
@@ -90,6 +93,14 @@ Your backend application will be running at `http://localhost:8000`.
    npm install
    ```
 
+3. **Install React Toastify**:
+
+   To use toast messages in your application, run:
+
+   ```bash
+   npm install react-toastify
+   ```
+
 ### Frontend Running
 
 To start the frontend application, use the following command:
@@ -116,3 +127,6 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 
 - Thanks to the FastAPI and Pydantic communities for their excellent documentation and support.
 - Thanks to the React community for providing a powerful library for building user interfaces.
+```
+
+Feel free to customize any part further! This README provides clear guidance for users setting up both the backend and frontend. Let me know if you need anything else!
