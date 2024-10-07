@@ -41,7 +41,7 @@ config-mgmt/
 ├── requirements.txt
 ├── .env
 ├── README.md
-└── ...
+└── .gitignore
 ```
 
 ## Technologies Used
@@ -56,4 +56,3 @@ config-mgmt/
 - **Logging**: Python’s built-in logging module for tracking application behavior and errors.
 
 This structure and technology stack will help guide developers through the project's layout and the key technologies utilized in the backend development.
-```
