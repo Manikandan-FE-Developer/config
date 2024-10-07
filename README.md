@@ -3,37 +3,42 @@
 The backend project is organized as follows:
 
 ```
-config-mgmt/
-├── app/ 
+backend/
+│
+├── app/
 │   ├── api/
 │   │   ├── controllers/
-│   │   │   ├── __init__.py
-│   │   │   └── ...
-│   │   └── __init__.py
-│   ├── models/
-│   │   ├── __init__.py
+│   │   │   └── config/
 │   │   └── ...
-│   ├── services/
-│   │   ├── __init__.py
+│   ├── client/
 │   │   └── ...
-│   ├── utils/
-│   │   ├── __init__.py
+│   ├── datagenerator/
 │   │   └── ...
-│   ├── database/
-│   │   ├── __init__.py
+│   ├── harness/
 │   │   └── ...
-│   ├── dependencies/
-│   │   ├── __init__.py
+│   ├── middlewares/
 │   │   └── ...
-│   ├── routes/
-│   │   ├── __init__.py
-│   │   └── ...
-│   ├── main.py
-│   └── settings.py
-├── tests/
-│   ├── test_<module>.py
+│   └── schemas/
+│       └── ...
+├── database/
+│   └── ...
+├── dependencies/
+│   └── ...
+├── logs/
+│   └── ...
+├── models/
+│   └── ...
+├── repository/
+│   └── ...
+├── routes/
+│   └── ...
+├── services/
+│   └── ...
+├── utils/
 │   └── ...
 ├── .env
+├── main.py
+├── settings.py
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -49,5 +54,3 @@ config-mgmt/
 - **Python Dotenv**: For loading environment variables from a `.env` file.
 - **Pydantic-Settings**: For enhanced settings management with Pydantic.
 - **Logging**: Python’s built-in logging module for tracking application behavior and errors.
-
-This structure and technology stack will help guide developers through the project's layout and the key technologies utilized in the backend development.
