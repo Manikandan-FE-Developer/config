@@ -14,7 +14,7 @@ Configuration Management is a FastAPI application designed to manage and retriev
 
 ## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - Python 3.7+ for the backend
 - Node.js and npm for the frontend
@@ -75,6 +75,11 @@ python -m uvicorn main:app --reload
 ```
 
 Your backend application will be running at `http://localhost:8000`.
+
+
+
+
+
 
 
 ### Frontend Installation
