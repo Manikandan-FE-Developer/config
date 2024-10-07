@@ -4,44 +4,39 @@ The backend project is organized as follows:
 
 ```
 config-mgmt/
-│
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── schemas/
+├── app/ 
+│   ├── api/
+│   │   ├── controllers/
+│   │   │   ├── __init__.py
+│   │   │   └── ...
+│   │   └── __init__.py
+│   ├── models/
 │   │   ├── __init__.py
-│   │   ├── config/
-│   │   │   ├── ConfigSchema.py
-│   │   │   ├── CommonSchema.py
-│   │   │   ├── TemplateCreateSchema.py
-│   │   │   └── ConfigTemplateSchema.py
-│   │   └── ...
-│   ├── routers/
-│   │   ├── __init__.py
-│   │   ├── config_router.py
 │   │   └── ...
 │   ├── services/
 │   │   ├── __init__.py
-│   │   ├── config_service.py
 │   │   └── ...
-│   └── utils/
-│       ├── __init__.py
-│       └── helpers.py
-│
-├── config/
-│   ├── settings.py
-│   ├── logging_config.py
-│   └── ...
-│
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── ...
+│   ├── database/
+│   │   ├── __init__.py
+│   │   └── ...
+│   ├── dependencies/
+│   │   ├── __init__.py
+│   │   └── ...
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   └── ...
+│   ├── main.py
+│   └── settings.py
 ├── tests/
-│   ├── __init__.py
-│   ├── test_config.py
+│   ├── test_<module>.py
 │   └── ...
-│
-├── requirements.txt
 ├── .env
+├── .gitignore
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
 
 ## Technologies Used
