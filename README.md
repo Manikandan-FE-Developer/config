@@ -55,9 +55,9 @@ Configuration Management is a FastAPI application designed to manage and retriev
    OAUTH_TOKEN_URL=your_oauth_token_url
    GITHUB_REPO_NAME=your_github_repo_name
    GITHUB_TOKEN=your_github_token
+   GITHUB_HOST_URL=your_github_host_url
    BRANCH=your_branch
    COLUMNS=your_columns
-   GITHUB_HOST_URL=your_github_host_url
    ```
 
 ### Backend Running
@@ -91,20 +91,12 @@ Your backend application will be running at `http://localhost:8000`.
    npm install
    ```
 
-3. **Install React Toastify**:
-
-   To use toast messages in your application, run:
-
-   ```bash
-   npm install react-toastify
-   ```
-
 ### Frontend Running
 
 To start the frontend application, use the following command:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Your frontend application will be running at `http://localhost:5173`.
@@ -125,31 +117,3 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 
 - Thanks to the FastAPI and Pydantic communities for their excellent documentation and support.
 - Thanks to the React community for providing a powerful library for building user interfaces.
-```
-
-Feel free to let me know if you need any other modifications!
-
-## API Documentation
-
-API endpoints can be accessed via Swagger UI at `http://localhost:8000/docs`.
-
-## Contributing
-
-We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Thanks to the FastAPI and Pydantic communities for their excellent documentation and support.
-```
-
-### Customization Tips
-
-- **Replace placeholders**: Update any placeholders (like `YourUsername`, `YourRepoName`) with your actual GitHub username and repository name.
-- **Add project-specific sections**: If there are specific features, installation instructions, or configuration details unique to your project, include those in the README.
-- **Additional documentation**: Consider adding a section for FAQ, troubleshooting, or examples of how to use the API if needed.
-
-Let me know if you need any changes or additional information!
