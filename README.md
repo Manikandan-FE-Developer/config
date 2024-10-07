@@ -7,6 +7,7 @@ Configuration Management is a FastAPI application designed to manage and retriev
 ## Features
 
 - **RESTful API**: Easily access configuration data through well-defined endpoints.
+- **React Frontend**: Intuitive user interface for managing configurations.
 - **Environment Variable Management**: Securely manage sensitive information using environment variables.
 - **Logging**: Comprehensive logging to track application behavior and issues.
 - **Flexible Configuration**: Use Pydantic models to define and validate configurations dynamically.
@@ -15,17 +16,18 @@ Configuration Management is a FastAPI application designed to manage and retriev
 
 ### Prerequisites
 
-- Python 3.7+
-- Virtual Environment (recommended)
-- Dependencies listed in `requirements.txt`
+- Python 3.7+ for the backend
+- Node.js and npm for the frontend
+- Virtual Environment (recommended) for Python dependencies
+- Dependencies listed in `requirements.txt` for the backend
 
-### Installation
+### Backend Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YourUsername/YourRepoName.git
-   cd YourRepoName
+   git clone https://github.com/virtualansoftware/config-mgmt.git
+   cd config-mgmt
    ```
 
 2. Create a virtual environment:
@@ -58,15 +60,74 @@ Configuration Management is a FastAPI application designed to manage and retriev
    GITHUB_HOST_URL=your_github_host_url
    ```
 
-### Running the Application
+### Backend Running
 
 To start the application, use the following command:
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 
-Your application will be running at `http://localhost:8000`.
+Or, if you are using Windows, you can run the application with:
+
+```bash
+python -m uvicorn main:app --reload
+```
+
+Your backend application will be running at `http://localhost:8000`.
+
+
+### Frontend Installation
+
+1. Navigate to the frontend directory:
+
+   ```bash
+   cd frontend
+   ```
+
+2. Install the required packages:
+
+   ```bash
+   npm install
+   ```
+
+3. **Install React Toastify**:
+
+   To use toast messages in your application, run:
+
+   ```bash
+   npm install react-toastify
+   ```
+
+### Frontend Running
+
+To start the frontend application, use the following command:
+
+```bash
+npm start
+```
+
+Your frontend application will be running at `http://localhost:5173`.
+
+## API Documentation
+
+API endpoints can be accessed via Swagger UI at `http://localhost:8000/docs`.
+
+## Contributing
+
+We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the FastAPI and Pydantic communities for their excellent documentation and support.
+- Thanks to the React community for providing a powerful library for building user interfaces.
+```
+
+Feel free to let me know if you need any other modifications!
 
 ## API Documentation
 
