@@ -76,12 +76,6 @@ python -m uvicorn main:app --reload
 
 Your backend application will be running at `http://localhost:8000`.
 
-
-
-
-
-
-
 ### Frontend Installation
 
 1. Navigate to the frontend directory:
